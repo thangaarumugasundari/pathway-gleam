@@ -2,9 +2,24 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Linkedin, Facebook, Instagram } from "lucide-react";
 
 const socials = [
-  { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:bg-[#0A66C2]" },
-  { Icon: Facebook, href: "https://facebook.com", label: "Facebook", color: "hover:bg-[#1877F2]" },
-  { Icon: Instagram, href: "https://instagram.com", label: "Instagram", color: "hover:bg-gradient-to-br hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF]" },
+  {
+    Icon: Linkedin,
+    href: "https://www.linkedin.com/company/connect-training-solutions-private-limited/",
+    label: "LinkedIn",
+    color: "hover:bg-[#0A66C2]",
+  },
+  {
+    Icon: Facebook,
+    href: "https://www.facebook.com/share/1CtoUR8y8e/?mibextid=wwXIfr",
+    label: "Facebook",
+    color: "hover:bg-[#1877F2]",
+  },
+  {
+    Icon: Instagram,
+    href: "https://www.instagram.com/connectmurali?igsh=M3k2Z2cwam96bTU3",
+    label: "Instagram",
+    color: "hover:bg-gradient-to-br hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF]",
+  },
 ];
 
 export function Contact() {
