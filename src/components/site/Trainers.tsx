@@ -3,37 +3,22 @@ import { useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
-const trainers = [
-  "Lara Baskar", "Afreen", "Geetha", "Pavithra", "Muthamil", "Sethu",
-  "Siva Suresh", "Gobi", "Ravi", "Vinoth", "Roshan", "Sripugal",
-  "Akash", "Hari", "Mukilan", "Ishwerya", "Dhina", "Nelson",
-  "Jasmine", "Mahesh", "Gopal", "Gnana Selvi", "Viskulesh", "Nandhini",
+const slides: string[][][] = [
+  [
+    ["Lara Baskar", "Afreen", "Geetha", "Pavithra", "Muthamil", "Sethu", "Siva Suresh"],
+    ["Gobi", "Ravi", "Vinoth", "Roshan", "Sripugal", "Akash", "Hari"],
+  ],
+  [
+    ["Mukilan", "Ishwerya", "Dhina", "Nelson", "Jasmine", "Mahesh", "Gopal"],
+    ["Gnana Selvi", "Viskulesh", "Nandhini"],
+  ],
 ];
-
-function chunk<T>(arr: T[], size: number): T[][] {
-  const result: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) {
-    result.push(arr.slice(i, i + size));
-  }
-  return result;
-}
-
-function getInitials(name: string) {
-  return name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 2);
-}
 
 export function Trainers() {
   const autoplay = useRef(
     Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
   const [emblaRef] = useEmblaCarousel({ loop: true, align: "start" }, [autoplay.current]);
-
-  const slides = chunk(trainers, 6);
 
   return (
     <section id="trainers" className="relative py-24 lg:py-32">
@@ -43,7 +28,7 @@ export function Trainers() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-14"
         >
           <div className="inline-block text-xs font-semibold tracking-[0.2em] text-yellow-deep uppercase mb-3">
             Our Team
@@ -61,25 +46,23 @@ export function Trainers() {
 
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
-            {slides.map((group, idx) => (
+            {slides.map((slide, idx) => (
               <div key={idx} className="flex-[0_0_100%] min-w-0 px-2">
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-                  {group.map((name) => (
-                    <motion.div
-                      key={name}
-                      whileHover={{ y: -6, scale: 1.05 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                      className="group relative bg-card rounded-2xl p-5 shadow-soft hover:shadow-glow-strong transition-all duration-300 flex flex-col items-center justify-center text-center min-h-[150px] border border-border hover:border-yellow-deep"
+                <div className="bg-white/60 backdrop-blur-xl border border-white shadow-soft rounded-3xl py-12 px-6 min-h-[240px] flex flex-col justify-center gap-7">
+                  {slide.map((line, lineIdx) => (
+                    <div
+                      key={lineIdx}
+                      className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3"
                     >
-                      <div className="w-14 h-14 rounded-full bg-gradient-yellow flex items-center justify-center mb-3 shadow-glow group-hover:animate-pulse-glow">
-                        <span className="text-base font-bold text-ink">
-                          {getInitials(name)}
+                      {line.map((name) => (
+                        <span
+                          key={name}
+                          className="text-base sm:text-lg font-semibold text-foreground/85 cursor-default transition-all duration-300 hover:text-yellow-deep hover:[text-shadow:_0_0_18px_rgb(234_179_8_/_0.7)]"
+                        >
+                          {name}
                         </span>
-                      </div>
-                      <h3 className="text-sm font-semibold text-foreground leading-tight">
-                        {name}
-                      </h3>
-                    </motion.div>
+                      ))}
+                    </div>
                   ))}
                 </div>
               </div>
