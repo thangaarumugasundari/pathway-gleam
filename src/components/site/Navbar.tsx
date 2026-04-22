@@ -9,7 +9,7 @@ const links = [
   { href: "#colleges", label: "College Partners" },
   { href: "#trainers", label: "Trainers" },
   { href: "#testimonials", label: "Testimonials" },
-  { href: "#blog", label: "Blog" },
+  { href: "#blog", label: "Recent Training" },
   { href: "#contact", label: "Contact" },
 ];
 
