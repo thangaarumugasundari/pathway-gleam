@@ -1,25 +1,33 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 
-const slides: string[][][] = [
-  [
-    ["Lara Baskar", "Afreen", "Geetha", "Pavithra", "Muthamil", "Sethu", "Siva Suresh"],
-    ["Gobi", "Ravi", "Vinoth", "Roshan", "Sripugal", "Akash", "Hari"],
-  ],
-  [
-    ["Mukilan", "Ishwerya", "Dhina", "Nelson", "Jasmine", "Mahesh", "Gopal"],
-    ["Gnana Selvi", "Viskulesh", "Nandhini"],
-  ],
+const trainers: string[] = [
+  "Lara Baskar",
+  "Afreen",
+  "Geetha",
+  "Pavithra",
+  "Muthamil",
+  "Sethu",
+  "Siva Suresh",
+  "Gobi",
+  "Ravi",
+  "Vinoth",
+  "Roshan",
+  "Sripugal",
+  "Akash",
+  "Hari",
+  "Mukilan",
+  "Ishwerya",
+  "Dhina",
+  "Nelson",
+  "Jasmine",
+  "Mahesh",
+  "Gopal",
+  "Gnana Selvi",
+  "Viskulesh",
+  "Nandhini",
 ];
 
 export function Trainers() {
-  const autoplay = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
-  );
-  const [emblaRef] = useEmblaCarousel({ loop: true, align: "start" }, [autoplay.current]);
-
   return (
     <section id="trainers" className="relative py-24 lg:py-32">
       <div className="max-w-6xl mx-auto px-6">
@@ -44,30 +52,21 @@ export function Trainers() {
           </p>
         </motion.div>
 
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex">
-            {slides.map((slide, idx) => (
-              <div key={idx} className="flex-[0_0_100%] min-w-0 px-2">
-                <div className="bg-white/60 backdrop-blur-xl border border-white shadow-soft rounded-3xl py-12 px-6 min-h-[240px] flex flex-col justify-center gap-7">
-                  {slide.map((line, lineIdx) => (
-                    <div
-                      key={lineIdx}
-                      className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3"
-                    >
-                      {line.map((name) => (
-                        <span
-                          key={name}
-                          className="text-base sm:text-lg font-semibold text-foreground/85 cursor-default transition-all duration-300 hover:text-yellow-deep hover:[text-shadow:_0_0_18px_rgb(234_179_8_/_0.7)]"
-                        >
-                          {name}
-                        </span>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {trainers.map((name, idx) => (
+            <motion.div
+              key={name}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35, delay: idx * 0.03 }}
+              className="group relative bg-white/70 backdrop-blur-xl border border-white shadow-soft rounded-2xl px-3 py-4 flex items-center justify-center text-center min-h-[68px] hover:bg-gradient-to-br hover:from-yellow-glow/30 hover:to-yellow-soft hover:shadow-glow-strong hover:-translate-y-1 transition-all duration-300 cursor-default"
+            >
+              <span className="text-sm sm:text-base font-semibold text-foreground/85 group-hover:text-yellow-deep transition-colors">
+                {name}
+              </span>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
