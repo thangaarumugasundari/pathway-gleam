@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Counter } from "./Counter";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export function Hero() {
   return (
@@ -52,18 +52,34 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <a
-            href="#services"
-            className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-yellow text-ink font-semibold shadow-glow hover:shadow-glow-strong hover:scale-105 transition-all"
+            href="https://wa.me/919677964379"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group btn-press inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-yellow text-ink font-semibold shadow-glow hover:shadow-glow-strong"
           >
-            Explore Services
+            Request Proposal
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-glass text-foreground font-semibold shadow-soft hover:bg-white transition-all"
+            href="#services"
+            className="btn-press inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-glass text-foreground font-semibold shadow-soft hover:bg-white"
           >
-            Talk to Us
+            View Programs
           </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.55 }}
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs sm:text-sm text-foreground/70"
+        >
+          {["Since 2015", "Trusted by 50+ Colleges", "5000+ Success Stories", "Tamil Nadu Based"].map((t) => (
+            <span key={t} className="inline-flex items-center gap-1.5">
+              <CheckCircle2 className="h-4 w-4 text-yellow-deep" />
+              <span className="font-medium">{t}</span>
+            </span>
+          ))}
         </motion.div>
 
         <motion.div
