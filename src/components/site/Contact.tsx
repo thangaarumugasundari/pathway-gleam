@@ -121,6 +121,22 @@ export function Contact() {
             18 A/2, 5th Street, Sivanthi Nagar, Tirunelveli - 627001
           </p>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-8 rounded-3xl overflow-hidden shadow-card border-4 border-white"
+        >
+          <iframe
+            title="CONNECT Training Solutions — Tirunelveli office"
+            src="https://www.google.com/maps?q=Tirunelveli,Tamil+Nadu&output=embed"
+            className="w-full h-72 md:h-96"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </motion.div>
       </div>
     </section>
   );
