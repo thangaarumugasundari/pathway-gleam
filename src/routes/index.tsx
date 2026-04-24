@@ -3,11 +3,14 @@ import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Services } from "@/components/site/Services";
 import { About } from "@/components/site/About";
+import { WhyChooseUs } from "@/components/site/WhyChooseUs";
+import { Metrics } from "@/components/site/Metrics";
 import { Journey } from "@/components/site/Journey";
 import { Colleges } from "@/components/site/Colleges";
 import { Trainers } from "@/components/site/Trainers";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Blog } from "@/components/site/Blog";
+import { FAQ } from "@/components/site/FAQ";
 import { CTA } from "@/components/site/CTA";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -45,13 +48,16 @@ function Index() {
     <main className="relative overflow-x-hidden bg-background">
       <Navbar />
       <Hero />
-      <Services />
       <About />
+      <WhyChooseUs />
+      <Services />
+      <Metrics />
       <Journey />
       <Colleges />
       <Trainers />
       <Testimonials />
       <Blog />
+      <FAQ />
       <CTA />
       <Contact />
       <Footer />
@@ -59,3 +65,4 @@ function Index() {
     </main>
   );
 }
+

@@ -6,10 +6,12 @@ import logo from "@/assets/logo.webp";
 const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#colleges", label: "College Partners" },
+  { href: "#why-us", label: "Why Us" },
+  { href: "#colleges", label: "Colleges" },
   { href: "#trainers", label: "Trainers" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#testimonials", label: "Stories" },
   { href: "#blog", label: "Recent Training" },
+  { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ];
 
