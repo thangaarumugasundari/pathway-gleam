@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const testimonials = [
   {
@@ -89,6 +89,11 @@ export function Testimonials() {
               >
                 <div className="bg-yellow-soft/90 backdrop-blur-xl border-2 border-yellow-glow/40 shadow-card rounded-3xl p-8 sm:p-12 max-w-2xl mx-4 relative">
                   <Quote className="absolute -top-4 -left-2 h-12 w-12 text-yellow-deep/40" fill="currentColor" />
+                  <div className="flex gap-1 mb-3">
+                    {Array.from({ length: 5 }).map((_, s) => (
+                      <Star key={s} className="h-4 w-4 text-yellow-deep" fill="currentColor" />
+                    ))}
+                  </div>
                   <p className="font-hand text-2xl sm:text-3xl leading-snug text-foreground/90">
                     "{t.text}"
                   </p>

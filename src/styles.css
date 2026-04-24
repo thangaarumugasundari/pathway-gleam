@@ -164,4 +164,35 @@
 
   .scrollbar-hide::-webkit-scrollbar { display: none; }
   .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee 40s linear infinite; }
+  .animate-marquee-fast { animation: marquee 25s linear infinite; }
+  .marquee-pause:hover .animate-marquee,
+  .marquee-pause:hover .animate-marquee-fast { animation-play-state: paused; }
+
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+            mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+
+  @keyframes float-up {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  .animate-float-up { animation: float-up 6s ease-in-out infinite; }
+
+  @keyframes spin-slow {
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow { animation: spin-slow 18s linear infinite; }
+
+  .btn-press {
+    transition: transform 200ms var(--transition-smooth), box-shadow 300ms var(--transition-smooth);
+  }
+  .btn-press:hover { transform: translateY(-3px); }
+  .btn-press:active { transform: translateY(-1px) scale(0.98); }
 }
