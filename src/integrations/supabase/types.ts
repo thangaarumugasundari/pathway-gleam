@@ -16,27 +16,63 @@ export type Database = {
     Tables: {
       blogs: {
         Row: {
+          author: string | null
+          category: string | null
           created_at: string
           description: string
           id: string
           image_url: string | null
           published_date: string
+          read_time: string | null
           title: string
         }
         Insert: {
+          author?: string | null
+          category?: string | null
           created_at?: string
           description: string
           id?: string
           image_url?: string | null
           published_date?: string
+          read_time?: string | null
           title: string
         }
         Update: {
+          author?: string | null
+          category?: string | null
           created_at?: string
           description?: string
           id?: string
           image_url?: string | null
           published_date?: string
+          read_time?: string | null
+          title?: string
+        }
+        Relationships: []
+      }
+      recent_trainings: {
+        Row: {
+          conducted_date: string
+          created_at: string
+          description: string
+          id: string
+          image_url: string | null
+          title: string
+        }
+        Insert: {
+          conducted_date?: string
+          created_at?: string
+          description: string
+          id?: string
+          image_url?: string | null
+          title: string
+        }
+        Update: {
+          conducted_date?: string
+          created_at?: string
+          description?: string
+          id?: string
+          image_url?: string | null
           title?: string
         }
         Relationships: []

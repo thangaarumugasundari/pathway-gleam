@@ -9,6 +9,7 @@ import { Journey } from "@/components/site/Journey";
 import { Colleges } from "@/components/site/Colleges";
 import { Trainers } from "@/components/site/Trainers";
 import { Testimonials } from "@/components/site/Testimonials";
+import { RecentTraining } from "@/components/site/RecentTraining";
 import { Blog } from "@/components/site/Blog";
 import { CTA } from "@/components/site/CTA";
 import { Contact } from "@/components/site/Contact";
@@ -55,6 +56,7 @@ function Index() {
       <Colleges />
       <Trainers />
       <Testimonials />
+      <RecentTraining />
       <Blog />
       <CTA />
       <Contact />
