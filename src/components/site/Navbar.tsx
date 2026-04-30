@@ -11,7 +11,7 @@ const links = [
   { href: "#trainers", label: "Trainers" },
   { href: "#testimonials", label: "Stories" },
   { href: "#blog", label: "Recent Training" },
-  { href: "#faq", label: "FAQ" },
+  
   { href: "#contact", label: "Contact" },
 ];
 
