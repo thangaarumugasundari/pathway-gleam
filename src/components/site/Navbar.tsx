@@ -10,8 +10,8 @@ const links = [
   { href: "#colleges", label: "Colleges" },
   { href: "#trainers", label: "Trainers" },
   { href: "#testimonials", label: "Stories" },
-  { href: "#blog", label: "Recent Training" },
-  
+  { href: "#recent-training", label: "Recent Training" },
+  { href: "#blog", label: "Blog" },
   { href: "#contact", label: "Contact" },
 ];
 
