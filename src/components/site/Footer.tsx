@@ -1,4 +1,5 @@
 import logo from "@/assets/logo-new.jpeg";
+import wordmark from "@/assets/wordmark.png";
 import { Phone, Mail } from "lucide-react";
 
 export function Footer() {
@@ -12,10 +13,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img src={logo} alt="CONNECT" className="h-11 w-11 rounded-2xl object-cover block" />
-              <div className="leading-tight">
-                <div className="font-bold text-base">CONNECT</div>
-                <div className="text-[10px] text-white/60">Training Solutions (P) Ltd.</div>
-              </div>
+              <img src={wordmark} alt="CONNECT Training Solutions" className="h-9 w-auto block" />
             </div>
             <p className="text-sm text-white/70 leading-relaxed">
               Empowering students with industry-ready skills since 2015.
