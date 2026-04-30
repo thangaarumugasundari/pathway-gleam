@@ -1,0 +1,1 @@
+DELETE FROM public.recent_trainings;
