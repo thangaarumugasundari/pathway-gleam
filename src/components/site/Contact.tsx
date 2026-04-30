@@ -16,7 +16,7 @@ const socials = [
   },
   {
     Icon: Instagram,
-    href: "https://www.instagram.com/connectmurali?igsh=M3k2Z2cwam96bTU3",
+    href: "https://www.instagram.com/connectmurali?igsh=MXh5MHI0dmlqNTdmYQ==",
     label: "Instagram",
     color: "hover:bg-gradient-to-br hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF]",
   },
@@ -88,7 +88,7 @@ export function Contact() {
               <Mail className="h-5 w-5 text-ink" />
             </div>
             <h4 className="font-bold mb-1">Email</h4>
-            <a href="mailto:connectmurali@gmail.com" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">connectmurali@gmail.com</a>
+            <a href="mailto:connectmuralidharan@gmail.com" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">connectmuralidharan@gmail.com</a>
             <a href="mailto:connectoperations@gmail.com" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">connectoperations@gmail.com</a>
           </motion.div>
 

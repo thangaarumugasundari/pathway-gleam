@@ -22,8 +22,8 @@ export function Footer() {
               <a href="tel:+919677964379" className="flex items-center gap-2 text-sm text-white/80 hover:text-yellow-glow transition-colors">
                 <Phone className="h-4 w-4" /> +91 96779 64379
               </a>
-              <a href="mailto:connectmurali@gmail.com" className="flex items-center gap-2 text-sm text-white/80 hover:text-yellow-glow transition-colors">
-                <Mail className="h-4 w-4" /> connectmurali@gmail.com
+              <a href="mailto:connectmuralidharan@gmail.com" className="flex items-center gap-2 text-sm text-white/80 hover:text-yellow-glow transition-colors">
+                <Mail className="h-4 w-4" /> connectmuralidharan@gmail.com
               </a>
             </div>
           </div>
@@ -49,7 +49,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/60">
-          <p>© 2026 CONNECT Training Solutions (P) Ltd. All rights reserved.</p>
+          <p>© 2026 CONNECT Training Solutions. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-yellow-glow transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-yellow-glow transition-colors">Terms</a>
