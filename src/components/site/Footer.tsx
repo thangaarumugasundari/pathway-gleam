@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logo-new.jpeg";
 import { Phone, Mail } from "lucide-react";
 
 export function Footer() {
@@ -11,10 +11,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="relative">
-                <div className="absolute inset-0 bg-yellow-glow blur-lg opacity-60 rounded-2xl" />
-                <img src={logo} alt="CONNECT" className="relative h-11 w-11 rounded-2xl" />
-              </div>
+              <img src={logo} alt="CONNECT" className="h-11 w-11 rounded-2xl object-cover block" />
               <div className="leading-tight">
                 <div className="font-bold text-base">CONNECT</div>
                 <div className="text-[10px] text-white/60">Training Solutions (P) Ltd.</div>

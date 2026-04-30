@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logo-new.jpeg";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -39,10 +39,7 @@ export function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-5 lg:px-8 h-18 flex items-center justify-between py-3">
         <a href="#home" className="flex items-center gap-3 group">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-yellow blur-lg opacity-50 group-hover:opacity-80 transition-opacity rounded-2xl" />
-            <img src={logo} alt="CONNECT logo" className="relative h-11 w-11 rounded-2xl object-cover" />
-          </div>
+          <img src={logo} alt="CONNECT logo" className="h-11 w-11 rounded-2xl object-cover block" />
           <div className="leading-tight">
             <div className="font-bold text-base sm:text-lg tracking-tight">CONNECT</div>
             <div className="text-[10px] sm:text-xs text-muted-foreground -mt-0.5">Training Solutions</div>
