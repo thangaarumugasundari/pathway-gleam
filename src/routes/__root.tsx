@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "CONNECT Training Solutions | Training & Placement Experts" },
+      { name: "description", content: "A modern, premium single-page website for CONNECT Training Solutions, showcasing their services and success stories." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "CONNECT Training Solutions | Training & Placement Experts" },
+      { property: "og:description", content: "A modern, premium single-page website for CONNECT Training Solutions, showcasing their services and success stories." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "CONNECT Training Solutions | Training & Placement Experts" },
+      { name: "twitter:description", content: "A modern, premium single-page website for CONNECT Training Solutions, showcasing their services and success stories." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/70f1fe4d-4dd3-495a-b89f-973ef8da83fe/id-preview-aee51021--0fdc3f1d-050e-454b-8eb1-0f9489f2a18d.lovable.app-1777527798238.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/70f1fe4d-4dd3-495a-b89f-973ef8da83fe/id-preview-aee51021--0fdc3f1d-050e-454b-8eb1-0f9489f2a18d.lovable.app-1777527798238.png" },
     ],
     links: [
       {
