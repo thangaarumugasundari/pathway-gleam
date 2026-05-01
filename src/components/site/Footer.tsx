@@ -10,8 +10,8 @@ export function Footer() {
       <div className="relative max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
-            <div className="mb-4 bg-white rounded-2xl p-3 inline-block">
-              <img src={logo} alt="CONNECT Training Solutions" className="h-12 w-auto block" />
+            <div className="mb-4 inline-block">
+              <img src={logo} alt="CONNECT Training Solutions" className="h-14 w-auto block" />
             </div>
             <p className="text-sm text-white/70 leading-relaxed">
               Empowering students with industry-ready skills since 2015.
