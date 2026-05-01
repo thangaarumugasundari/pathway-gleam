@@ -139,7 +139,7 @@ export function Contact() {
 
         <div className="mt-6 flex justify-center">
           <a
-            href="https://maps.app.goo.gl/2Gf6zFh2SGQsGNnm9"
+            href="https://maps.app.goo.gl/tAaXAbyL911WbYTZ7?g_st=ic"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-yellow text-ink font-semibold shadow-glow hover:scale-105 transition-transform"
