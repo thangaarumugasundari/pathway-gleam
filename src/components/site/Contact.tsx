@@ -136,6 +136,18 @@ export function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </motion.div>
+
+        <div className="mt-6 flex justify-center">
+          <a
+            href="https://maps.app.goo.gl/2Gf6zFh2SGQsGNnm9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-yellow text-ink font-semibold shadow-glow hover:scale-105 transition-transform"
+          >
+            <MapPin className="h-5 w-5" />
+            View Our Office Location
+          </a>
+        </div>
       </div>
     </section>
   );
