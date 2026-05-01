@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-new.jpeg";
-import wordmark from "@/assets/wordmark.png";
+import logo from "@/assets/connect-logo-full.png";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -39,9 +38,8 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-5 lg:px-8 h-18 flex items-center justify-between py-3">
-        <a href="#home" className="flex items-center gap-3 group">
-          <img src={logo} alt="CONNECT logo" className="h-11 w-11 rounded-2xl object-cover block" />
-          <img src={wordmark} alt="CONNECT Training Solutions" className="h-9 sm:h-10 w-auto block dark:invert-0" />
+        <a href="#home" className="flex items-center group">
+          <img src={logo} alt="CONNECT Training Solutions" className="h-12 sm:h-14 w-auto block" />
         </a>
 
         <ul className="hidden lg:flex items-center gap-1">

@@ -62,8 +62,7 @@ export function Contact() {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <motion.a
-            href="tel:+919677964379"
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -74,8 +73,9 @@ export function Contact() {
               <Phone className="h-5 w-5 text-ink" />
             </div>
             <h4 className="font-bold mb-1">Phone</h4>
-            <p className="text-muted-foreground text-sm">+91 96779 64379</p>
-          </motion.a>
+            <a href="tel:+919677964379" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">+91 96779 64379</a>
+            <a href="tel:+918870879359" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">+91 88708 79359</a>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -88,8 +88,7 @@ export function Contact() {
               <Mail className="h-5 w-5 text-ink" />
             </div>
             <h4 className="font-bold mb-1">Email</h4>
-            <a href="mailto:connectmuralidharan@gmail.com" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">connectmuralidharan@gmail.com</a>
-            <a href="mailto:connectoperations@gmail.com" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">connectoperations@gmail.com</a>
+            <a href="mailto:murali@connectplacement.com" className="block text-muted-foreground text-sm hover:text-yellow-deep transition-colors">murali@connectplacement.com</a>
           </motion.div>
 
           <motion.div
@@ -137,6 +136,18 @@ export function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </motion.div>
+
+        <div className="mt-6 flex justify-center">
+          <a
+            href="https://maps.app.goo.gl/2Gf6zFh2SGQsGNnm9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-yellow text-ink font-semibold shadow-glow hover:scale-105 transition-transform"
+          >
+            <MapPin className="h-5 w-5" />
+            View Our Office Location
+          </a>
+        </div>
       </div>
     </section>
   );

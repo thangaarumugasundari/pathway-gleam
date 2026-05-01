@@ -1,5 +1,4 @@
-import logo from "@/assets/logo-new.jpeg";
-import wordmark from "@/assets/wordmark.png";
+import logo from "@/assets/connect-logo-full.png";
 import { Phone, Mail } from "lucide-react";
 
 export function Footer() {
@@ -11,9 +10,8 @@ export function Footer() {
       <div className="relative max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="CONNECT" className="h-11 w-11 rounded-2xl object-cover block" />
-              <img src={wordmark} alt="CONNECT Training Solutions" className="h-9 w-auto block" />
+            <div className="mb-4 bg-white rounded-2xl p-3 inline-block">
+              <img src={logo} alt="CONNECT Training Solutions" className="h-12 w-auto block" />
             </div>
             <p className="text-sm text-white/70 leading-relaxed">
               Empowering students with industry-ready skills since 2015.
@@ -22,8 +20,11 @@ export function Footer() {
               <a href="tel:+919677964379" className="flex items-center gap-2 text-sm text-white/80 hover:text-yellow-glow transition-colors">
                 <Phone className="h-4 w-4" /> +91 96779 64379
               </a>
-              <a href="mailto:connectmuralidharan@gmail.com" className="flex items-center gap-2 text-sm text-white/80 hover:text-yellow-glow transition-colors">
-                <Mail className="h-4 w-4" /> connectmuralidharan@gmail.com
+              <a href="tel:+918870879359" className="flex items-center gap-2 text-sm text-white/80 hover:text-yellow-glow transition-colors">
+                <Phone className="h-4 w-4" /> +91 88708 79359
+              </a>
+              <a href="mailto:murali@connectplacement.com" className="flex items-center gap-2 text-sm text-white/80 hover:text-yellow-glow transition-colors">
+                <Mail className="h-4 w-4" /> murali@connectplacement.com
               </a>
             </div>
           </div>

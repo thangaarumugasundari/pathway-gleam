@@ -23,7 +23,7 @@ export function CTA() {
               Let's design a program that fits your students' goals.
             </p>
             <a
-              href="https://wa.me/919677964379"
+              href="https://wa.me/919600965961"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2 px-8 py-4 rounded-full bg-ink text-white font-semibold shadow-card hover:scale-105 transition-transform"
