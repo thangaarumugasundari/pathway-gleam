@@ -52,7 +52,7 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <a
-            href="https://wa.me/919677964379"
+            href="https://wa.me/919600965961"
             target="_blank"
             rel="noopener noreferrer"
             className="group btn-press inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-yellow text-ink font-semibold shadow-glow hover:shadow-glow-strong"
