@@ -108,6 +108,7 @@ export function RecentTraining() {
                     month: "long",
                     day: "numeric",
                     year: "numeric",
+                    timeZone: "UTC",
                   })}
                 </div>
                 <h3 className="font-bold text-xl leading-tight mb-4 group-hover:text-yellow-deep transition-colors">
