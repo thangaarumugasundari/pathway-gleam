@@ -50,7 +50,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col items-center justify-center text-center gap-3 text-sm text-white/60">
-          <p>© 2026 CONNECT Training Solutions. All rights reserved.</p>
+          <p>© 2026 CONNECT Training Solutions. All rights reserved. - legal name - RATHINA PRAKASAM ABINAYA DEVI</p>
           <div className="flex gap-6">
             <a
               href="https://www.termsfeed.com/live/00852882-8c63-42fd-b321-664acc0ca060"
